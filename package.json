@@ -1,0 +1,22 @@
+{
+  "name": "logomakersvg",
+  "version": "1.0.0",
+  "description": "Makes simple SVG logos with up to 3 letters inside",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
