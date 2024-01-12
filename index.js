@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const {writeFile} = require('fs/promises');
-const Shapes = require('.lib/shapes.js');
+const Shapes = require('./lib/shapes.js');
 
 inquirer
 .prompt([
@@ -12,7 +12,7 @@ inquirer
     },
     {
         type: 'input',
-        message: 'Please enter a color for your shape (Note- the color must be a standard color recognized by javascript such as "blue" or "rebeccapurple"):',
+        message: 'Please enter a color for your shape- the color must be a standard css color such as blue or rebeccapurple:',
         name:'logoColorChosen',
     },
     {
@@ -47,5 +47,5 @@ inquirer
     }
     let logoToRender = new Shapes(shapeString, logoColor, textString, textColorString);
     let renderSVG = logoToRender.render();
-    return writeFile('.examples/logo.svg', renderSVG)
+    return writeFile(`./examples/${response.shapeChosen}Logo.svg`, renderSVG)
 });
