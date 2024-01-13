@@ -1,8 +1,11 @@
+// import inquirer and fs.writefile from node_modules
 const inquirer = require('inquirer');
 const {writeFile} = require('fs/promises');
-const {Circle, Square, Triangle} = require('./lib/shapes.js');
-// const {Triangle, Circle, Square} = require('./lib/shapes.js');
 
+// import the 3 shape classes from my shapes.js file in the lib folder
+const {Circle, Square, Triangle} = require('./lib/shapes.js');
+
+// use inquirer to add prompts to the command line to ask user to input the shape, shapeColor, test characters, and the cokor of those characters
 inquirer
 .prompt([
     {
@@ -27,6 +30,7 @@ inquirer
         name:'textColorChosen',
     },
 ])
+// feed the response object from the inquirer prompts above into a switch statement. response.shapeChosen will give the shape the user desires. Then instantiate the proper shape class with the other inputs chosen, then return the writeFile promise which will build the desired logo,svg file and store it in the examples folder
 .then((response) => {
     switch(response.shapeChosen) {
         case "triangle":
