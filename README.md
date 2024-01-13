@@ -59,7 +59,7 @@ inquirer
 ```
 The below Javascript example show how the infomration obtained in the prompts is used to make a new SVG file. In the index.js file (not shown) a switch statement is used to determine which class to use (Circle, Square or Triangle), then a new instance of that class is instantiated followed by calling the render method from that class within the fs.writeFile method to produce the new file. 
 
-Shown below is the Class constructor that will be used when the user chooses a cirlce. This method will feed the users choices into the new objext and use the render method to produce the logo: 
+Shown below is the Class constructor that will be used when the user chooses a circle. This method will feed the users choices into the new object and use the render method to produce the logo: 
 
 ```JS
 class Circle {
@@ -90,7 +90,7 @@ This website is designed to allow a user to fill in the information they need to
 
 I developed this website from scratch. 
 
-* The npm fs method is used to write a new SVG file based on user input
+* The npm fs.writeFile method is used to write a new SVG file based on user input
 
 *  The npm Inquirer module is used to ask the user various quesitons on the command line. Their answers are then stored as variables and then fed into the template using template literals and interpolation
 
