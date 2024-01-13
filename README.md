@@ -27,7 +27,7 @@ Makes simple SVG logos with up to 3 letters inside
 
 ## Description
 
-[Watch the video explaining how to use the site](XXXXXXXXXX)
+[Watch the video explaining how to use the site](https://watch.screencastify.com/v/2Pfrj03F8dGSHQ3OSs32)
 
 [Visit the Github repository](https://github.com/Jeffreydne/logoMakerSVG)
 
